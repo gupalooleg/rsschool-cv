@@ -24,3 +24,7 @@ My goal is to broaden my horizons and gain additional skills in JavaScript devel
 ## Education
 *Sep, 2006 - Jul, 2011*
 Belarusian State University of Informatics and Radioelectronics
+
+## Languages
+* Russian - Native
+* English - Pre-intermediate
