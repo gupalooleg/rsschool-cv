@@ -6,3 +6,7 @@ My goal is to broaden my horizons and gain additional skills in JavaScript devel
 
 ## Contacts
 **e-mail:** gupalooleg@gmail.com
+
+## Skills
+*ABAP
+*SQL
