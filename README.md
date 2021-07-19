@@ -1,1 +1,1 @@
-# rsschool-cv
+https://gupalooleg.github.io/rsschool-cv/cv
