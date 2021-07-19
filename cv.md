@@ -10,3 +10,13 @@ My goal is to broaden my horizons and gain additional skills in JavaScript devel
 ## Skills
 *ABAP
 *SQL
+
+## Experience
+*Nov, 2018 - Till now*
+**SAP Software Engineer**(EPAM Systems)
+
+*Oct, 2014 - Oct, 2018*
+**SAP Software Engineer**(JSC «SB Belarusbank»)
+
+*Sep, 2011 - Oct, 2014
+**SAP Basis Administrator**(JSC «SB Belarusbank»)
