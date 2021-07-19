@@ -8,8 +8,8 @@ My goal is to broaden my horizons and gain additional skills in JavaScript devel
 **e-mail:** gupalooleg@gmail.com
 
 ## Skills
-*ABAP
-*SQL
+* ABAP
+* SQL
 
 ## Experience
 *Nov, 2018 - Till now*
