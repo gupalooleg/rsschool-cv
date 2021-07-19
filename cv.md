@@ -18,7 +18,7 @@ My goal is to broaden my horizons and gain additional skills in JavaScript devel
 *Oct, 2014 - Oct, 2018*
 **SAP Software Engineer**(JSC «SB Belarusbank»)
 
-*Sep, 2011 - Oct, 2014
+*Sep, 2011 - Oct, 2014*
 **SAP Basis Administrator**(JSC «SB Belarusbank»)
 
 ## Education
