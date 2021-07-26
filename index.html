@@ -37,6 +37,49 @@
         </ul>
       </section>
       <section>
+        <h2>Sample code</h2>
+        <figure>
+          <figcaption>Checking for permission to perform an action(SAP HANA XS JavaScript):</figcaption>
+          <pre><code>
+            const ldapHelper = $.import('utils', 'ldapHelper');
+
+            const groups = {
+              SUPPORTER: 'Supporter',
+              USER: 'User',
+            };
+            
+            const actions = {
+              SUBMIT: 'submit',
+              REJECT: 'reject',
+              REQUEST_TIME: 'requestTime',
+              APPROVE_TIME: 'approveTime',
+              REJECT_TIME: 'rejectTime',
+            };
+            
+            const permissions = [
+              {
+                group: groups.SUPPORTER,
+                availableActions: [actions.APPROVE_TIME, actions.REJECT_TIME],
+              },
+              {
+                group: groups.USER,
+                availableActions: [actions.SUBMIT, actions.REJECT, actions.REQUEST_TIME],
+              },
+            ];
+            
+            function checkUserPermissionForAction(user, action) {
+              const LdapHelper = new ldapHelper.LdapHelper();
+              const userGroups = LdapHelper.getGroupsByUser(user);
+            
+              return userGroups.some((element) => {
+                let permission = permissions.find((item) => item.group === element);
+                return permission && permission.availableActions.includes(action);
+              });
+            }
+          </code></pre>
+        </figure>
+      </section>
+      <section>
         <h2>Work experience</h2>
         <p><i>Nov, 2018 - Till now</i><br /><b>EPAM Systems</b> (SAP Software Engineer)</p>
         <p><i>Oct, 2014 - Oct, 2018</i><br /><b>JSC «SB Belarusbank»</b> (SAP Software Engineer)</p>
