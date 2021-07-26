@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Aleh Hupalo | rsschool-cv</title>
+  </head>
+  <body>
+    <div class="content">
+      <header>
+        <h1>
+          <a href="https://github.com/rolling-scopes-school/tasks/blob/master/tasks/cv/html-css-git.md">rsschool-cv</a>
+        </h1>
+      </header>
+      <main>
+        <section>
+          <figure class="avatar-figure">
+            <img src="images/AH.jpg" alt="Avatar" class="avatar" />
+            <h2>Aleh Hupalo</h2>
+          </figure>
+          <p>
+            I’m a software engineer with 10 years of IT experience. My goal is to broaden my horizons and gain
+            additional skills in JavaScript development.
+          </p>
+        </section>
+        <section>
+          <h2>Contacts</h2>
+          <ul>
+            <li><b>e-mail: </b><a href="mailto:gupalooleg@gmail.com">gupalooleg@gmail.com</a></li>
+            <li><b>discord: </b>AlehHupalo#8943</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Skills</h2>
+          <ul>
+            <li>ABAP</li>
+            <li>SQL</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Work experience</h2>
+          <p><i>Nov, 2018 - Till now</i><br /><b>EPAM Systems</b> (SAP Software Engineer)</p>
+          <p><i>Oct, 2014 - Oct, 2018</i><br /><b>JSC «SB Belarusbank»</b> (SAP Software Engineer)</p>
+          <p><i>Sep, 2011 - Oct, 2014</i><br /><b>JSC «SB Belarusbank»</b> (SAP Basis Administrator)</p>
+        </section>
+        <section>
+          <h2>Education</h2>
+          <p>
+            <i>Sep, 2011 - Dec, 2012</i><br /><b>Belarusian State University of Informatics and Radioelectronics</b>
+            (Master of Economic Sciences)
+          </p>
+          <p>
+            <i>Sep, 2006 - Jul, 2011</i><br /><b>Belarusian State University of Informatics and Radioelectronics</b>
+            (Software Engineer-Economist)
+          </p>
+        </section>
+        <section>
+          <h2>Languages</h2>
+          <ul>
+            <li>Russian - Native</li>
+            <li>English - Pre-intermediate</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Sample code</h2>
+          <figure>
+            <figcaption>Checking for permission to perform an action(SAP HANA XS JavaScript):</figcaption>
+            <pre><code>
+            const ldapHelper = $.import('utils', 'ldapHelper');
+
+            const groups = {
+              SUPPORTER: 'Supporter',
+              USER: 'User',
+            };
+            
+            const actions = {
+              SUBMIT: 'submit',
+              REJECT: 'reject',
+              REQUEST_TIME: 'requestTime',
+              APPROVE_TIME: 'approveTime',
+              REJECT_TIME: 'rejectTime',
+            };
+            
+            const permissions = [
+              {
+                group: groups.SUPPORTER,
+                availableActions: [actions.APPROVE_TIME, actions.REJECT_TIME],
+              },
+              {
+                group: groups.USER,
+                availableActions: [actions.SUBMIT, actions.REJECT, actions.REQUEST_TIME],
+              },
+            ];
+            
+            function checkUserPermissionForAction(user, action) {
+              const LdapHelper = new ldapHelper.LdapHelper();
+              const userGroups = LdapHelper.getGroupsByUser(user);
+            
+              return userGroups.some((element) => {
+                let permission = permissions.find((item) => item.group === element);
+                return permission && permission.availableActions.includes(action);
+              });
+            }
+          </code></pre>
+          </figure>
+        </section>
+      </main>
+      <footer>
+        <p>&copy; <time datetime="2021">2021</time> Aleh Hupalo</p>
+        <p>
+          <a href="https://github.com/gupalooleg">
+            <img
+              src="https://github.githubassets.com/favicons/favicon.svg"
+              alt="GitHub(gupalooleg)"
+              class="footer-icon"
+            />
+          </a>
+          <a href="https://rs.school/js/">
+            <img src="https://rs.school/images/rs_school_js.svg" alt="The Rolling Scopes(JS/FE)" class="footer-icon" />
+          </a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

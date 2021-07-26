@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  border-top: 1px solid #c8c8c8;
+  border-bottom: 1px solid #c8c8c8;
+}
+
+footer {
+  text-align: center;
+}
+
+.content {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.avatar {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.avatar-figure {
+  text-align: center;
+}
+
+.footer-icon {
+  width: 50px;
+}
